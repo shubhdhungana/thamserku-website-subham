@@ -1,5 +1,13 @@
+:root {
+    --primary-green: #4CAF50;
+    --dark-blue: #002147;
+    --light-gray: #f8f9fa;
+}
+
 body {
     overflow-x: hidden; /* yesto page bata horizontal scroll hatauna */
+    font-family: 'Arial', sans-serif;
+
 }
 
 .section {
@@ -310,4 +318,203 @@ a:hover {
     60% {
         transform: translateX(-50%) translateY(-15px);
     }
+}
+
+
+/* Section Titles */
+.section-title {
+    /* Sets the color for section titles using a custom CSS variable */
+    color: var(--primary-green); 
+    
+    /* Makes the text uppercase for better visibility */
+    text-transform: uppercase;
+    
+    /* Adjusts font size and weight for emphasis */
+    font-size: 0.9rem;
+    font-weight: 600;
+    
+    /* Adds spacing between letters for a cleaner look */
+    letter-spacing: 1px;
+    
+    /* Adds space below the title */
+    margin-bottom: 1rem;
+}
+
+/* Main Titles */
+.main-title {
+    /* Sets the primary color for main headings */
+    color: var(--dark-blue);
+    
+    /* Defines the font size and weight to make it prominent */
+    font-size: 2.5rem;
+    font-weight: 700;
+    
+    /* Adds spacing below the title */
+    margin-bottom: 1.5rem;
+}
+
+/* Travel Styles Cards */
+.travel-card {
+    /* Positions the card relative for child elements */
+    position: relative;
+
+    /* Fixes the height for consistency across cards */
+    height: 400px;
+
+    /* Hides content that overflows the card's boundary */
+    overflow: hidden;
+
+    /* Rounds the corners of the card */
+    border-radius: 8px;
+
+    /* Adds space below each card */
+    margin-bottom: 30px;
+}
+
+.travel-card img {
+    /* Ensures the image fills the entire card */
+    width: 100%;
+    height: 100%;
+
+    /* Ensures the image scales proportionally */
+    object-fit: cover;
+
+    /* Adds a smooth transition for hover effects */
+    transition: transform 0.3s ease;
+}
+
+.travel-card:hover img {
+    /* Scales up the image slightly on hover */
+    transform: scale(1.05);
+}
+
+.travel-card-overlay {
+    /* Positions the overlay at the bottom of the card */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    /* Adds padding inside the overlay */
+    padding: 30px;
+
+    /* Creates a gradient effect for overlay background */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+
+    /* Sets the text color to white for contrast */
+    color: white;
+}
+
+/* Icon Badge */
+.icon-badge {
+    /* Positions the badge at the top-left of the card */
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+    /* Creates a circular badge */
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+
+    /* Adds inner padding to the badge */
+    padding: 8px;
+}
+
+/* Featured Journeys Cards */
+.trek-card {
+    /* Positions the card relative for overlay and badges */
+    position: relative;
+
+    /* Sets the height of the card */
+    height: 500px;
+
+    /* Rounds the card's corners */
+    border-radius: 8px;
+
+    /* Hides any overflowing content */
+    overflow: hidden;
+}
+
+.trek-badge {
+    /* Positions the badge at the top-left corner of the card */
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+    /* Defines the badge's appearance */
+    background: var(--primary-green);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+
+    /* Capitalizes the badge text */
+    text-transform: uppercase;
+}
+
+/* Testimonial Section */
+.testimonial {
+    /* Sets a light background color for the section */
+    background-color: #f9f9f9;
+
+    /* Adds vertical padding for spacing */
+    padding: 60px 0;
+
+    /* Centers text and content */
+    text-align: center;
+}
+
+.star-rating {
+    /* Sets the color for star icons */
+    color: #ffd700;
+
+    /* Defines the size of the star icons */
+    font-size: 24px;
+
+    /* Adds vertical spacing */
+    margin: 20px 0;
+}
+
+/* Map Section */
+.map-section {
+    /* Sets a light gray background */
+    background-color: var(--light-gray);
+
+    /* Adds vertical padding for spacing */
+    padding: 60px 0;
+}
+
+/* Destination Cards */
+.destination-card {
+    /* Rounds the card's corners */
+    border-radius: 8px;
+
+    /* Hides any overflowing content */
+    overflow: hidden;
+
+    /* Adds a subtle shadow for a 3D effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Explore Button */
+.explore-btn {
+    /* Adds a border and sets the text color */
+    border: 1px solid var(--dark-blue);
+    color: var(--dark-blue);
+
+    /* Adds padding and adjusts font size */
+    padding: 8px 24px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+
+    /* Adds a smooth transition for hover effects */
+    transition: all 0.3s ease;
+}
+
+.explore-btn:hover {
+    /* Changes background and text color on hover */
+    background: var(--dark-blue);
+    color: white;
 }
